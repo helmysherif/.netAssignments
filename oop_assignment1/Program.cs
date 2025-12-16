@@ -118,3 +118,14 @@
         }
     }
 }
+
+/*
+ * When should I use a Struct & Record instead of a class?
+ * class is Reference Type → When you copy a class object, both copies refer to the same memory. Changing one affects the other.
+   Use classes when you have large or complex objects or need inheritance.
+ * struct is Value Type → When you copy a struct, a new copy is created in memory. Changing one does not affect the other.
+ * Best for small, simple objects
+ * record Usually a Reference Type but works like value-like for equality.
+   Focused on immutability → the data doesn’t change after creation.
+   Great for data objects / DTOs where you want to compare values instead of memory reference.
+ */
